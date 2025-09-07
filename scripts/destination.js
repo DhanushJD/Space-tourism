@@ -28,7 +28,7 @@ function loadDestinationPage (name){
               ${details.description}
           </span>
         </p>
-        <img src="/assets/shared/line.svg" alt="line" class="description-line">
+        <img src="assets/shared/line.svg" alt="line" class="description-line">
         <div class="distance-travel-time">
           <div class="distance-row">
             <p class="distance-title">
@@ -87,4 +87,5 @@ function loadDestinationPage (name){
       break;    
   }
 }
+
 loadDestinationPage('MOON');
