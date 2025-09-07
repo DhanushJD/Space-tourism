@@ -1,0 +1,215 @@
+body{
+  background-image: url('../../assets/destination/background-destination-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.nav-bar a.active .bottom-border{
+  background-color: rgb(255,255,255);
+}
+.destination{
+  box-sizing: border-box;
+  padding-block-start: 3rem;
+  padding-inline-start: 9.063rem;
+  padding-inline-end: 5rem;
+}
+.destination-contents{
+  display: flex;
+  gap: 7.85rem;
+  margin-block-start: 9.438rem;
+}
+.place-img{
+  width: 30rem;
+  height: 30rem;
+}
+.destination-places{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.places{
+  display: flex;
+  gap: 2rem;
+}
+.places div{
+  height: 2em;
+  color: var(--font-color-light-blue);
+  font-family: var(--preset8-family);
+  font-size: var(--preset8-size);
+  letter-spacing: var(--preset8-letter-spacing);
+  cursor: pointer;
+  border-bottom: 0.188em solid transparent;
+}
+.places div:hover{
+  border-bottom: 0.188rem solid rgba(255, 255, 255, 0.5);
+  color: rgb(255,255,255);
+}
+.place-name{
+  display: block;
+  color: var(--font-color-white);
+  font-family: var(--preset2-family);
+  font-size: var(--preset2-size);
+}
+.description{
+  display: block;
+  color: var(--font-color-light-blue);
+  font-family: var(--preset9-family);
+  font-size: var(--preset9-size);
+  line-height: var(--preset9-line-height);
+  width: 25em;
+}
+.description-line{
+  width: 100%;
+  object-fit: cover;
+  min-height: 0.094rem;
+  max-height: 0.125rem;
+}
+.distance-travel-time{
+  display: flex;
+  gap: 1.5rem;
+}
+.distance-title,.travel-time-title{
+  color: var(--font-color-light-blue);
+  font-family: var(--preset7-family);
+  font-size: var(--preset7-size);
+  letter-spacing: var(--preset7-letter-spacing);
+  margin-block-end: 0.857em;
+}
+.distance,.travel-time{
+  color: var(--font-color-white);
+  font-family: var(--preset6-family);
+  font-size: var(--preset6-size);
+}
+.places .action{
+  color: rgb(255,255,255);
+  border-bottom: 0.188rem solid rgb(255,255,255);
+}
+.places .action:hover{
+  border-bottom: 0.188rem solid rgb(255,255,255);
+}
+@media (min-width: 48rem) and (max-width: 63.938rem){
+  body{
+    background-image: url('../../assets/destination/background-destination-tablet.jpg');
+  }
+  .destination{
+    box-sizing: border-box;
+    padding-block-start: 2.5rem;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+  }
+  .destination-contents{
+    gap: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 4.125rem;
+  }
+  .place-img{
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-block-end: 4.625rem;
+  }
+  .destination-places{
+    align-items: center;
+    width: 35.625rem;
+    gap: 1.5rem;
+  }
+  .place-name{
+    font-size: 5rem;
+    margin-block-end: 0.75rem;
+  }
+  .place-description{
+    text-align: center;
+  }
+  .description{
+    font-size: 1rem;
+    width: 100%;
+  }
+  .distance-travel-time{
+    width: 75.5%;
+    justify-content: space-between;
+  }
+  .distance-row{
+    text-align: center;
+  }
+  .travel-time-row{
+    text-align: center;
+  }
+}
+@media (min-width:64rem) and (max-width:89.938rem){
+  .destination{
+    padding-block-start: 5rem;
+    padding-inline: 4rem;
+  }
+  .destination-contents{
+    gap: unset;
+    justify-content: space-between;
+  }
+  .place-img{
+    width: 26rem;
+    height: 26rem;
+  }
+}
+
+@media (max-width: 47.938rem){
+  body{
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+  }
+  .destination{
+    box-sizing: border-box;
+    padding-block-start: 1.5rem;
+    padding-inline: 1.5rem;
+    margin-block-start: 1.5rem;
+  }
+  .destination-contents{
+    gap: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 3.125rem;
+  }
+  .place-img{
+    width: 9.375rem;
+    height: 9.375rem;
+    margin-block-end: 3.625rem;
+  }
+  .destination-places{
+    align-items: center;
+    width: unset;
+    gap: 1.5rem;
+  }
+  .places div{
+    font-size: 0.875rem;
+    letter-spacing: 0.131rem;
+  }
+  .place-name{
+    margin-block-end: 0.75rem;
+    font-size: 3.5rem;
+  }
+  .place-description{
+    text-align: center;
+  }
+  .description{
+    width: 20.625rem;
+    font-size: 0.938rem;
+  }
+  .distance-travel-time{
+    flex-direction: column;
+  }
+  .distance-row{
+    text-align: center;
+  }
+  .distance-title{
+    font-size: 0.875rem;
+  }
+  .travel-time-row{
+    text-align: center;
+  }
+}
+
+@media (max-width:23.375rem){
+  .description{
+    width: 18.75rem;
+  }
+}

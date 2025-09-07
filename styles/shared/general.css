@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --font-color-blue: hsl(230,35%,7%);
+  --font-color-white: hsl(0,0%,100%);
+  --font-color-light-blue:hsl(231,77%,90%);
+
+  --Bellefair-family: 'Bellefair', serif;
+  --Barlow-condensed-family:'Barlow Condensed', sans-serif;
+  --Barlow-family:'Barlow', sans-serif;
+
+  --regular: 400;
+  
+  --preset1-family:var(--Bellefair-family);
+  --preset1-size: 9rem;
+
+  --preset2-family:var(--Bellefair-family);
+  --preset2-size: 6.25rem;
+
+  --preset3-family:var(--Bellefair-family);
+  --preset3-size: 3.5rem;
+
+  --preset4-family:var(--Bellefair-family);
+  --preset4-size: 2rem;
+
+  --preset5-family:var(--Barlow-condensed-family);
+  --preset5-size: 1.75rem;
+  --preset5-letter-spacing: 0.25rem;
+  
+  --preset6-family:var(--Bellefair-family);
+  --preset6-size: 1.75rem;
+  
+  --preset7-family:var(--Barlow-condensed-family);
+  --preset7-size:0.875rem;
+  --preset7-letter-spacing: 0.125rem;
+  
+  --preset8-family:var(--Barlow-condensed-family);
+  --preset8-size: 1rem;
+  --preset8-letter-spacing:0.125rem;
+
+  --preset9-family: var(--Barlow-family);
+  --preset9-size: 1.125rem;
+  --preset9-line-height:180%;
+}
+html,body{
+  min-height: 100vh;
+}
+p{
+  margin: 0;
+}
+button{
+  cursor: pointer;
+}
+.page-title-row{
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.title-num{
+  font-family: var(--Barlow-condensed-family);
+  color: rgba(255,255,255,0.25);
+  font-size: 1.75rem;
+  font-weight: bold;
+  letter-spacing: 0.295rem;
+}
+.page-title{
+  font-family: var(--preset5-family);
+  font-size: var(--preset5-size);
+  letter-spacing: var(--preset5-letter-spacing);
+  color: var(--font-color-white);
+  font-weight: 330;
+}
+@media (min-width: 48rem) and (max-width: 63.938rem){
+  .title-num,.page-title{
+    font-size: 1.25rem;
+    letter-spacing: 15%;
+  }
+}
+@media (max-width: 47.938rem){
+  .page-title-row{
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .title-num{
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+  .page-title{
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+}

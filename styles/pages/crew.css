@@ -1,0 +1,204 @@
+body{
+  background-image: url('../../assets/crew/background-crew-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.nav-bar a.active .bottom-border{
+  background-color: rgb(255,255,255);
+}
+.crew-page{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-block-start: 3rem;
+  padding-inline-start: 9.063rem;
+  padding-inline-end: 6rem;
+}
+.crew-info{
+  position: relative;
+  height: 44.688rem;
+  margin-block-start: 1.5rem;
+  display: flex;
+}
+.crew-details{
+  position: relative;
+}
+.crew-role{
+  margin-block-start: 6.125em;
+  margin-block-end: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--preset4-family);
+  font-size: var(--preset4-size);
+}
+.crew-name{
+  color: var(--font-color-white);
+  font-family: var(--preset3-family);
+  font-size: var(--preset3-size);
+  margin-block-end: 0.429em;
+  width: 34.375rem;
+}
+.crew-bio{
+  width: 30em;
+  height: 7.333em;
+  color: var(--font-color-light-blue);
+  font-family: var(--preset9-family);
+  font-size: var(--preset9-size);
+  line-height: var(--preset9-line-height);
+}
+.button-rows{
+  position: absolute;
+  bottom: 0;
+}
+.button-rows .page-button{
+  width: 0.938rem;
+  height: 0.938rem;
+  border-radius: 0.469rem;
+  border: none;
+  background-color: rgba(255, 255, 255,0.174);
+}
+.page-button:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.page-button:nth-child(1),
+.page-button:nth-child(2),
+.page-button:nth-child(3){
+  margin-inline-end: 2.5rem;
+}
+.button-rows .action{
+  background-color: rgb(255, 255, 255);
+} 
+.crew-img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: max-content;
+  width: max-content;
+}
+@media (min-width: 48rem) and (max-width: 63.938rem){
+  body{
+    background-image: url('../../assets/crew/background-crew-tablet.jpg');
+  }
+  .crew-page{
+    padding-block-start: 2.5rem;
+    padding-inline: 2.5rem;
+  }
+  .crew-info{
+    height: unset;
+    position: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .crew-details{
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 2rem;
+  }
+  .crew-role{
+    font-size: 1.5rem;
+    margin-block-start: 2.5rem;
+  }
+  .crew-name{
+    font-size: 2.5rem;
+    width: unset;
+  }
+  .crew-bio{
+    font-size: 1rem;
+    width: 35.875rem;
+    text-align: center;
+  }
+  .button-rows{
+    position: unset;
+    margin-block-start: 1.5rem;
+  }
+  .button-rows .page-button{
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 0.313rem;
+  }
+  .page-button:nth-child(1),
+  .page-button:nth-child(2),
+  .page-button:nth-child(3){
+    margin-inline-end: 1rem;
+  }
+  .crew-img{
+    position: unset;
+    width: 27.875rem;
+    height: 31.25rem;
+  }
+}
+
+@media (min-width:64rem) and (max-width:89.938rem){
+  .crew-page{
+    padding-block-start: 5rem;
+    padding-inline: 4rem;
+  }
+  .crew-info{
+    justify-content: space-between;
+  }
+  .crew-role{
+    margin-block-start: 10rem;
+  }
+  .crew-img{
+    position: unset;
+    width: 26.25rem;
+    height: 37.5rem;
+  }
+}
+
+@media (max-width: 47.938rem){
+   body{
+    background-image: url('../../assets/crew/background-crew-mobile.jpg');
+  }
+  .crew-page{
+    padding-block-start: 1.5rem;
+    padding-inline: 1.5rem;
+    margin-block-start: 1.5rem;
+  }
+  .crew-info{
+    height: unset;
+    position: unset;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .crew-details{
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block-end: 2.313rem;
+  }
+  .crew-role{
+    font-size: 1.125rem;
+    margin-block-start: 2.5rem;
+  }
+  .crew-name{
+    font-size: 1.5rem;
+    width: unset;
+    margin-block-end: 1.5rem;
+  }
+  .crew-bio{
+    width: 20.625rem;
+    height: 9.875rem;
+    text-align: center;
+    font-size: 0.938rem;
+  }
+  .button-rows{
+    margin-block-start: 1.5rem;
+    position: unset;
+  }
+  .page-button:nth-child(1),
+  .page-button:nth-child(2),
+  .page-button:nth-child(3){
+    margin-inline-end: 1rem;
+  }
+  .crew-img{
+    position: unset;
+    width: 16.938rem;
+    height: 21.25rem;
+  }
+}
